@@ -1,6 +1,3 @@
-BEGIN;
--- Table: employees.employee
-
 CREATE TABLE IF NOT EXISTS employees.employee
 (
     id bigint NOT NULL DEFAULT nextval('employees.id_employee_seq'::regclass),
@@ -11,7 +8,3 @@ CREATE TABLE IF NOT EXISTS employees.employee
     hire_date date NOT NULL,
     CONSTRAINT idx_16988_primary PRIMARY KEY (id)
 )
-
-ALTER TABLE IF EXISTS employees.employee OWNER to postgres;
-
-END;

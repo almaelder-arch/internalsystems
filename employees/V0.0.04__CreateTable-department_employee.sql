@@ -18,10 +18,6 @@ CREATE TABLE IF NOT EXISTS employees.department_employee
         ON DELETE CASCADE
 )
 
-
-ALTER TABLE IF EXISTS employees.department_employee OWNER to postgres;
-
-
 CREATE INDEX IF NOT EXISTS idx_16982_dept_no
     ON employees.department_employee USING btree
     (department_id ASC NULLS LAST)

@@ -18,8 +18,7 @@ CREATE TABLE IF NOT EXISTS employees.department_employee
 )
 
 
-ALTER TABLE IF EXISTS employees.department_employee
-    OWNER to postgres;
+ALTER TABLE IF EXISTS employees.department_employee OWNER to postgres;
 
 
 CREATE INDEX IF NOT EXISTS idx_16982_dept_no

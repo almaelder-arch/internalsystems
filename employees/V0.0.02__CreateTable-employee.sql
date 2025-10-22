@@ -11,5 +11,4 @@ CREATE TABLE IF NOT EXISTS employees.employee
     CONSTRAINT idx_16988_primary PRIMARY KEY (id)
 )
 
-ALTER TABLE IF EXISTS employees.employee
-    OWNER to postgres;
+ALTER TABLE IF EXISTS employees.employee OWNER to postgres;

@@ -7,8 +7,6 @@ CREATE SEQUENCE IF NOT EXISTS employees.id_employee_seq
     MAXVALUE 9223372036854775807
     CACHE 1;
 
-ALTER SEQUENCE employees.id_employee_seq
-    OWNED BY employees.employee.id;
+ALTER SEQUENCE employees.id_employee_seq OWNED BY employees.employee.id;
 
-ALTER SEQUENCE employees.id_employee_seq
-    OWNER TO postgres;
+ALTER SEQUENCE employees.id_employee_seq OWNER TO postgres;

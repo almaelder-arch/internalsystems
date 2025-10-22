@@ -1,3 +1,4 @@
+BEGIN;
 -- SEQUENCE: employees.id_employee_seq
 
 CREATE SEQUENCE IF NOT EXISTS employees.id_employee_seq
@@ -10,3 +11,5 @@ CREATE SEQUENCE IF NOT EXISTS employees.id_employee_seq
 ALTER SEQUENCE employees.id_employee_seq OWNED BY employees.employee.id;
 
 ALTER SEQUENCE employees.id_employee_seq OWNER TO postgres;
+
+END;

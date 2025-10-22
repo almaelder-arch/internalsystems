@@ -1,3 +1,4 @@
+BEGIN;
 -- Table: employees.employee
 
 CREATE TABLE IF NOT EXISTS employees.employee
@@ -12,3 +13,5 @@ CREATE TABLE IF NOT EXISTS employees.employee
 )
 
 ALTER TABLE IF EXISTS employees.employee OWNER to postgres;
+
+END;

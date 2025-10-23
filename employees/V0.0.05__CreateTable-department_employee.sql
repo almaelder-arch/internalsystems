@@ -16,11 +16,11 @@ CREATE TABLE IF NOT EXISTS employees.department_employee
         REFERENCES employees.department (id) MATCH SIMPLE
         ON UPDATE RESTRICT
         ON DELETE CASCADE
-)
+);
 
 CREATE INDEX IF NOT EXISTS idx_16982_dept_no
     ON employees.department_employee USING btree
-    (department_id ASC NULLS LAST)
-    TABLESPACE pg_default;
+    (department_id ASC NULLS LAST);
+    
 
 END;
